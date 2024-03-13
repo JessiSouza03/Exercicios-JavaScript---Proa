@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exercício 4 - JS</title>
+</head>
+
+<body>
+    <script>
+        // 4 - Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+
+        var op = prompt("Qual figura será calculada? Escolha um número\n" +
+            "1 - Retângulo\n" +
+            "2 - Quadrado\n" +
+            "3 - Losango\n" +
+            "4 - Trapézio\n" +
+            "5 - Paralelogramo\n" +
+            "6 - Triângulo\n" +
+            "7 - Círculo");
+
+        if (op == 1) {
+            var base = parseInt(prompt("Qual o valor da base do retângulo?"));
+            var alt = parseInt(prompt("Qual o valor da altura do retângulo?"));
+            var area = base * alt;
+            alert("O valor da área é " + area);
+
+        } else if (op == 2) {
+            var l = parseInt(prompt("Qual o valor do lado do quadrado?"));
+            var area = l * l;
+            alert("O valor da área é " + area);
+
+        } else if (op == 3) {
+            var d1 = parseInt(prompt("Qual o valor da diagonal maior do losango?"));
+            var d2 = parseInt(prompt("Qual o valor da diagonal menor do losango?"));
+            var area = (d1 * d2) / 2;
+            alert("O valor da área é " + area);
+
+        } else if (op == 4) {
+            var b1 = parseInt(prompt("Qual o valor da base maior do trapézio?"));
+            var b2 = parseInt(prompt("Qual o valor da base menor do trapézio?"));
+            var alt = parseInt(prompt("Qual o valor da altura do trapézio?"));
+            var area = ((b1 + b2) * alt) / 2;
+            alert("O valor da área é " + area);
+
+        } else if (op == 5) {
+            var base = parseInt(prompt("Qual o valor da base do paralelogramo?"));
+            var alt = parseInt(prompt("Qual o valor da altura do paralelogramo?"));
+            var area = base * alt;
+            alert("O valor da área é " + area);
+
+        } else if (op == 6) {
+            var base = parseInt(prompt("Qual o valor da base do triângulo?"));
+            var alt = parseInt(prompt("Qual o valor da altura do triângulo?"));
+            var area = (base * alt) / 2;
+            alert("O valor da área é " + area);
+
+        } else if (op == 7) {
+            var raio = parseInt(prompt("Qual o valor do raio do círculo?"));
+            var area = raio * raio * 3.14;
+            alert("O valor da área é " + area);
+        }
+    </script>
+</body>
+
+</html>
